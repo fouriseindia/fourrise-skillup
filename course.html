@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>SKILLUP corporate training center</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- contact pop up css -->
+    <link href="./css/pop-up-form.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="css/enquiery.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid d-none d-lg-block">
+        <div class="separate-logo-text">SkillUp Corporate Training Center, Pune</div>
+    </div>
+    <!-- new navbar started -->
+       <!-- enqiery button start -->
+
+    <div class="enquire-button" id="enquireButton">
+        <img src="./img/whatsapp.133ab902.png" alt="WhatsApp" class="whatsapp-icon">
+    </div>
+    
+    <div class="enquire-form-container" id="enquireFormContainer" style="display: none;">
+        <form id="enquireForm" style="gap: 1px;">
+            <h2>Get in touch with us</h2>
+
+            <label for="name" class="lab">Name:</label>
+            <input type="text" id="name" class="input" name="name" placeholder="Enter your name" required>
+
+            <label for="email" class="lab">Email:</label>
+            <input type="email" id="email" class="input" name="email" placeholder="Enter your email" required>
+
+            <label for="phone" class="lab">Phone Number:</label>
+            <input type="tel" id="phone" class="input" name="phone" placeholder="Enter your phone number" required
+                pattern="\d{10}" title="Please enter a valid 10-digit phone number">
+
+            <label for="message" class="lab">Message:</label>
+            <textarea id="message" class="textarea" name="message" rows="4"
+                placeholder="Enter your Message (Max 500 Characters)" maxlength="500" required></textarea>
+            <div id="charCount">0/500 characters</div>
+
+            <div id="errorMessage" style="color: red; margin-bottom: 10px;"></div>
+            <input type="hidden" name="access_key" value="4393e097-cd07-4b9c-8767-3c3ca827d1da">
+            <!-- Added access_key here -->
+            <button type="submit" style="background-color: #55a155;">Submit</button>
+            <button type="button" class="cancel-button" id="cancelButton"
+                style="background-color: #d83c3c;">Cancel</button>
+        </form>
+        <div id="responseMessage"></div>
+    </div>
+
+    
+    
+     <!-- enqiery button end -->
+    <!-- new navbar ended -->
+     <!-- Navbar Start -->
+    <div class="container-fluid">
+        <div class="row border-top px-xl-5 align-items-center"> <!-- Keep this for alignment -->
+            <div class="col-lg-3 d-flex flex-column align-items-center"> <!-- Use flex-column to stack vertically -->
+                <img src="./img/logo/fourise-logo.jpeg" alt="Fourise Logo" class="logo-image">
+               <p class="logo-text" style="margin-top: -10px;">Empowering <span>carrier</span></p>
+            </div>
+            
+            <div class="col-lg-9">
+                <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
+                    <a href="" class="text-decoration-none d-block d-lg-none">
+                        <img src="./img/logo/fourise-logo.jpeg" alt="Fourise Logo" class="logo-image">
+                    </a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav py-0">
+                            <a href="index.html" class="nav-item nav-link active">Home</a>
+                            <a href="about.html" class="nav-item nav-link">About</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Courses</a>
+                                <div class="dropdown-menu rounded-0 m-0">
+                                    <a href="Web-Designing.html" class="dropdown-item">Web Designing</a>
+                                    <a href="Full-Stack-Development.html" class="dropdown-item">Full Stack Development</a>
+                                    <a href="Android-Development.html" class="dropdown-item">Android Development</a>
+                                    <a href="Digital-Marketing.html" class="dropdown-item">Digital Marketing</a>
+                                    <a href="Database-System.html" class="dropdown-item">Database System</a>
+                                    <a href="Software-Testing.html" class="dropdown-item">Software Testing</a>
+                                    <a href="Python-Development.html" class="dropdown-item">Python Development</a>
+                                    <a href="MERN-Stack-Development.html" class="dropdown-item">MERN Stack Development</a>
+                                    <a href="SQL.html" class="dropdown-item">SQL</a>
+                                    <a href="RPA.html" class="dropdown-item">RPA</a>
+                                </div>
+                            </div>
+                            <a href="upcoming-batches.html" class="nav-item nav-link">New Batches</a>
+                            <a href="Testimonial.html" class="nav-item nav-link">Testimonials</a>
+                            <a href="Contact.html" class="nav-item nav-link">Contact</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+ <!-- Category Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <div class="text-center mb-5">
+                <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Subjects</h5>
+                <h1>Explore Top Subjects</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="cat-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="img/cat-1.jpg" alt="">
+                        <a class="cat-overlay text-white text-decoration-none" href="Web-Designing.html">
+                            <h4 class="text-white font-weight-medium">Web Designing</h4>
+                            <!-- <span>100 Courses</span> --> 
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="cat-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="img/cat-2.jpg" alt="">
+                        <a class="cat-overlay text-white text-decoration-none" href="full-stack-development.html">
+                            <h4 class="text-white font-weight-medium" style="text-align: center;">Full Stack Development</h4>
+                            <!-- <span>100 Courses</span> -->
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="cat-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="img/cat-4.jpg" alt="">
+                        <a class="cat-overlay text-white text-decoration-none" href="Android-Development.html">
+                            <h4 class="text-white font-weight-medium" style="text-align: center;">Android Development</h4>
+                            <!-- <span>100 Courses</span> -->
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="cat-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="img/cat-5.jpg" alt="">
+                        <a class="cat-overlay text-white text-decoration-none" href="Digital-Marketing.html">
+                            <h4 class="text-white font-weight-medium">Digital Marketing</h4>
+                            <!-- <span>100 Courses</span> -->
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="cat-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="img/cat-6.jpg" alt="">
+                        <a class="cat-overlay text-white text-decoration-none" href="Software-Testing.html">
+                            <h4 class="text-white font-weight-medium">Software Testing</h4>
+                            <!-- <span>100 Courses</span> -->
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="cat-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="img/cat-7.jpg" alt="">
+                        <a class="cat-overlay text-white text-decoration-none" href="Python-Development.html">
+                            <h4 class="text-white font-weight-medium" style="text-align: center;">Python Development</h4>
+                            <!-- <span>100 Courses</span> -->
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="cat-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="img/cat-8.jpg" alt="">
+                        <a class="cat-overlay text-white text-decoration-none" href="MERN-Stack-Development.html">
+                            <h4 class="text-white font-weight-medium" style="text-align: center;">MERN Stack Development</h4>
+                            <!-- <span>100 Courses</span> -->
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="cat-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="img/cat-8.jpg" alt="">
+                        <a class="cat-overlay text-white text-decoration-none" href="SQL.html">
+                            <h4 class="text-white font-weight-medium">SQL</h4>
+                            <!-- <span>100 Courses</span> -->
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="cat-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="img/cat-8.jpg" alt="">
+                        <a class="cat-overlay text-white text-decoration-none" href="RPA.html">
+                            <h4 class="text-white font-weight-medium">RPA</h4>
+                            <!-- <span>100 Courses</span> -->
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Category Start -->
+
+
+    <!-- Courses Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Courses</h5>
+                <h1>Our Popular Courses</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="rounded overflow-hidden mb-2">
+                        <img class="img-fluid" src="img/Courses/Html.jpg" alt="">
+                        <div class="bg-secondary p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <small class="m-0"><i class="fa fa-users text-primary mr-2"></i> Students</small>
+                                <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>01h 30m</small>
+                            </div>
+                            <a class="h5" href="Web-Designing.html">Web design & development courses for beginner</a>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                    <!-- <h5 class="m-0">$99</h5> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="rounded overflow-hidden mb-2">
+                        <img class="img-fluid" src="img/Courses/Full_stack_dev.png" alt="">
+                        <div class="bg-secondary p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                   <small class="m-0"><i class="fa fa-users text-primary mr-2"></i> Students</small>
+                                <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>01h 30m</small>
+                            </div>
+                            <a class="h5" href="full-stack-development.html">Full Stack Development courses for beginner</a>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                    <!-- <h5 class="m-0">$99</h5> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="rounded overflow-hidden mb-2">
+                        <img class="img-fluid" src="img/Courses/Testing.jpg" alt="">
+                        <div class="bg-secondary p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                   <small class="m-0"><i class="fa fa-users text-primary mr-2"></i> Students</small>
+                                <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>01h 30m</small>
+                            </div>
+                            <a class="h5" href="Software-Testing.html">Software Testing (Manual + Automation) courses for beginner</a>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                    <!-- <h5 class="m-0">$99</h5> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="rounded overflow-hidden mb-2">
+                        <img class="img-fluid" src="img/Courses/Android.png" alt="">
+                        <div class="bg-secondary p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                   <small class="m-0"><i class="fa fa-users text-primary mr-2"></i> Students</small>
+                                <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>01h 30m</small>
+                            </div>
+                            <a class="h5" href="Android-Development.html">Android Development courses for beginner</a>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                    <!-- <h5 class="m-0">$99</h5> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="rounded overflow-hidden mb-2">
+                        <img class="img-fluid" src="img/Courses/Digital_Marketing.jfif" alt="">
+                        <div class="bg-secondary p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                   <small class="m-0"><i class="fa fa-users text-primary mr-2"></i> Students</small>
+                                <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>01h 30m</small>
+                            </div>
+                            <a class="h5" href="Digital-Marketing.html">Digital Marketing courses for beginner</a>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                    <!-- <h5 class="m-0">$99</h5> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="rounded overflow-hidden mb-2">
+                        <img class="img-fluid" src="img/Courses/python-applications.png" alt="">
+                        <div class="bg-secondary p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                   <small class="m-0"><i class="fa fa-users text-primary mr-2"></i> Students</small>
+                                <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>01h 30m</small>
+                            </div>
+                            <a class="h5" href="Python-Development.html">Python Development courses for beginner</a>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                    <!-- <h5 class="m-0">$99</h5> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="rounded overflow-hidden mb-2">
+                        <img class="img-fluid" src="img/Courses/Mern-Stack-Developer-Course-1.png" alt="">
+                        <div class="bg-secondary p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                   <small class="m-0"><i class="fa fa-users text-primary mr-2"></i> Students</small>
+                                <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>01h 30m</small>
+                            </div>
+                            <a class="h5" href="MERN-Stack-Development.html">MERN Stack development courses for beginner</a>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                    <!-- <h5 class="m-0">$99</h5> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="rounded overflow-hidden mb-2">
+                        <img class="img-fluid" src="img/Courses/sql-courses.jpg" alt="">
+                        <div class="bg-secondary p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                   <small class="m-0"><i class="fa fa-users text-primary mr-2"></i> Students</small>
+                                <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>01h 30m</small>
+                            </div>
+                            <a class="h5" href="SQL.html">SQL Databases courses for beginner</a>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                    <!-- <h5 class="m-0">$99</h5> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="rounded overflow-hidden mb-2">
+                        <img class="img-fluid" src="img/Courses/RPA.jfif" alt="">
+                        <div class="bg-secondary p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                   <small class="m-0"><i class="fa fa-users text-primary mr-2"></i> Students</small>
+                                <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>01h 30m</small>
+                            </div>
+                            <a class="h5" href="RPA.html">RPA(Robotic Process Automation) for beginner</a>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                    <!-- <h5 class="m-0">$99</h5> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Courses End -->
+    <!-- Footer Start -->
+    <div class="footer">
+        <div class="footer-container">
+            <div class="contact-info">
+                <h5 class="footer-title">Get In Touch</h5>
+                <p><i class="fa fa-map-marker-alt"></i> Office No: 1, First Floor, Surabhi Complex, Chandan Nagar,
+                    Kharadi, Pune, Maharashtra (411014)</p>
+                <p><i class="fa fa-phone-alt"></i> +91 9527605805</p>
+                <p><i class="fa fa-envelope"></i> info@fouriseindia.com</p>
+                <div class="social-media">
+                    <a href="https://wa.me/9527605805?text=Hello%20there">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.facebook.com/fourise.india"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/in/jyoti-deokule-91005b309/"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/fouriseindia/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="course-list">
+                <h5 class="footer-title">SKILLUP</h5>
+                <ul class="course-links">
+                    <li><a href="index.html"><i class="fa fa-angle-right"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fa fa-angle-right"></i> About</a></li>
+                    <li><a href="course.html"><i class="fa fa-angle-right"></i> Courses</a></li>
+                    <li><a href="upcoming-batches.html"><i class="fa fa-angle-right"></i> New Batches</a></li>
+                    <li><a href="Contact.html"><i class="fa fa-angle-right"></i> Contact</a></li>
+
+                </ul>
+            </div>
+
+            <div class="course-list">
+                <h5 class="footer-title">Our Popular Courses </h5>
+                <ul class="course-links">
+                    <li><a href="full-stack-development.html"><i class="fa fa-angle-right"></i> Full Stack
+                            Development</a></li>
+                    <li><a href="Android-Development.html"><i class="fa fa-angle-right"></i> Android Development</a>
+                    </li>
+                    <li><a href="MERN-Stack-Development.html"><i class="fa fa-angle-right"></i> MERN Stack Development</a></li>
+                    <li><a href="RPA.html"><i class="fa fa-angle-right"></i> RPA</a></li>
+                    <li><a href="Software-Testing.html"><i class="fa fa-angle-right"></i> Software Testing</a></li>
+
+                </ul>
+            </div>
+            <div class="course-list">
+                <h5 class="footer-title">Our Contacts </h5>
+                <ul class="course-links" style="color: #f0f8ff;">
+                    <li><a href="#" style="pointer-events: none; text-decoration: none; color: inherit;"><i
+                                class="fa fa-angle-right"></i> 9527605805</a></li>
+                    <li><a href="#" style="pointer-events: none; text-decoration: none; color: inherit;"><i
+                                class="fa fa-angle-right"></i> 9607580580</a></li>
+                    <li><a href="#" style="pointer-events: none; text-decoration: none; color: inherit;"><i
+                                class="fa fa-angle-right"></i> 7020759254</a></li>
+
+                </ul>
+            </div>
+
+
+            <!-- <div class="newsletter">
+                <h5>Subscribe to our Newsletter</h5>
+                <p>Stay updated with our latest news.</p>
+                <input type="email" placeholder="Enter your email" />
+                <button type="submit">Subscribe</button>
+            </div> -->
+
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-left">
+                <p>&copy;Copyright 2024 SKILLUP. All Rights Reserved.Designed by Fourise Software Solution Pvt. Ltd.</p>
+            </div>
+            <div class="footer-bottom-right">
+                <ul>
+                    <li><a href="/Privacy.html">Privacy</a></li>
+                    <li><a href="term.html">Terms</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                    <li><a href="shipping.html">Help</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    
+
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/enqiery.js"></script>
+</body>
+
+</html>
